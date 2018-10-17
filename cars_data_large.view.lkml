@@ -8,9 +8,16 @@ view: cars_data_large {
   }
 
   dimension: user_id {
-    tags: ["id", "brand", "fuel_type"]
+    tags: ["user_id", "brand", "fuel_type"]
     type: number
-    sql: ${id} ;;
+    sql: ${TABLE}.id ;;
+  }
+
+
+  measure: testing_m {
+    tags: ["email", "user_id"]
+    type: number
+    sql: 1 ;;
   }
 
   dimension: brand {
