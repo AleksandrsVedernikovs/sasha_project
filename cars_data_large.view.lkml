@@ -7,6 +7,12 @@ view: cars_data_large {
     sql: ${TABLE}.id ;;
   }
 
+  dimension: user_id {
+    tags: ["id", "brand", "fuel_type"]
+    type: number
+    sql: ${id} ;;
+  }
+
   dimension: brand {
     tags: ["id"]
     type: string
