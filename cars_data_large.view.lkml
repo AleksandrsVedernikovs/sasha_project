@@ -15,7 +15,7 @@ view: cars_data_large {
 
 
   measure: testing_m {
-    #tags: ["email", "user_id"]
+    tags: ["email", "user_id"]
     type: number
     sql: 1 ;;
   }
